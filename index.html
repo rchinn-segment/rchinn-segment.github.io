@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
  
 <html>
@@ -45,8 +44,8 @@ Email: <input name="email" required="" size="60" type="email"/>
      email: email,
      name: fullname
    };
-Identify call
-     analytics.identify('12345', {
+ Identify call
+    analytics.identify('12345', {
        email: email,
        name: fullname,
        shoeType: shoeType
@@ -55,7 +54,7 @@ Identify call
      analytics.track('user signed up', user, function() {
        window.location.href = "";
      });
-  Ecommerce Events
+ Ecommerce Events
     analytics.track('Products Searched', {
      query: 'kith air force 1'
     });
@@ -74,7 +73,7 @@ Identify call
         image_url: 'https://www.example.com/product/path.jpg'
       }, {
         product_id: '505bd76785ebb509fc183733',
-   sku: '46493-32',
+        sku: '46493-32',
         name: 'Kith x Nike Air Force 1 “NYC”',
         price: 1000.00,
         position: 2,
@@ -102,17 +101,17 @@ Identify call
     analytics.track('Product Added', {
       cart_id: 'skdjsidjsdkdj29j',
       product_id: '507f1f77bcf86cd799439011',
-   sku: 'G-32',
+      sku: 'G-32',
       category: 'Jordan',
-   name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+      name: 'Air Jordan 4 - White / Military Blue - Fire Red',
       brand: 'Nike',
       variant: 'November 2019',
       price: 500.00,
       quantity: 1,
       coupon: 'First_Purchase',
-   position: 2,
-   url: 'https://www.example.com/product/path',
-     image_url: 'https://www.example.com/product/path.jpg'
+      position: 2,
+      url: 'https://www.example.com/product/path',
+      image_url: 'https://www.example.com/product/path.jpg'
     });
  
     analytics.track('Order Completed', {
@@ -131,7 +130,7 @@ Identify call
         {
           product_id: '507f1f77bcf86cd799439011',
           sku: 'G-32',
-   name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+          name: 'Air Jordan 4 - White / Military Blue - Fire Red',
           price: 500.00,
           quantity: 1,
           category: 'Jordan',

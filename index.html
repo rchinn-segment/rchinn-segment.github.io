@@ -22,6 +22,8 @@ Name: <input name="fullname" required="" size="60" type="text"/>
 <br> <br>
 Email: <input name="email" required="" size="60" type="email"/>
 <br> <br>
+ phone_number: <input name="phone_number" required="" size="60" type="phone_number"/>
+<br> <br>
 <label for="shoeType">Preferred Shoe</label>
  <select id="shoeType" name="shoeType">
    <option value="Running">Running</option>
@@ -38,15 +40,18 @@ Email: <input name="email" required="" size="60" type="email"/>
    e.preventDefault();
    var form = e.target;
    var email = form["email"].value;
+   var phone_number = form["phone_number"].value;
    var fullname = form["fullname"].value;
    var shoeType = form["shoeType"].value;
    var user = {
      email: email,
+     phone_number: phone_number,
      name: fullname
    };
  // Identify call
     analytics.identify('12345', {
       email: email,
+      phone_number: phone_number,
       name: fullname,
       shoeType: shoeType
     });

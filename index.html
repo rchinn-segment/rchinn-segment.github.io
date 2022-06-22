@@ -23,6 +23,8 @@ Name: <input name="fullname" required="" size="60" type="text"/>
 Email: <input name="email" required="" size="60" type="email"/>
 <br> <br>
  phone_number: <input name="phone_number" required="" size="60" type="phone_number"/>
+ <br> <br>
+ group_id: <input name="group_id" required="" size="60" type="group_id"/>
 <br> <br>
 <label for="shoeType">Preferred Shoe</label>
  <select id="shoeType" name="shoeType">
@@ -41,11 +43,13 @@ Email: <input name="email" required="" size="60" type="email"/>
    var form = e.target;
    var email = form["email"].value;
    var phone_number = form["phone_number"].value;
+   var group_id = form["group_id"].value;
    var fullname = form["fullname"].value;
    var shoeType = form["shoeType"].value;
    var user = {
      email: email,
      phone_number: phone_number,
+     group_id: group_id,
      name: fullname
    };
  // Identify call
@@ -58,6 +62,7 @@ Email: <input name="email" required="" size="60" type="email"/>
  // Group call
   analytics.group("0e8c78ea9d97a7b8185e8632", {
   name: "Initech",
+  group_id: group_id,
   industry: "Technology",
   employees: 329,
   plan: "enterprise",
